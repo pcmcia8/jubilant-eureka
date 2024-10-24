@@ -351,13 +351,61 @@ def cond9(flag):
     return h
 
 def cond10(flag):
-    h = -1
+    h = flag[30] * 0xd14f3e
+    h ^= 0xa06c215b
+
+    h += flag[26] * -0xc5ecbf
+    h += 0xb197c5c0
+
+    h ^= flag[6] * 0x19ff9c
+    h ^= 0x66e7d06c
+
+    h += flag[2] * 0xe3288b
+    h ^= 0x80af4325
+
+    h ^= flag[10] * 0xcfb18c
+    h -= 0xe13c8393
+
+    h^= flag[18] * 0xd208e5
+    h += 0xf96d2b51
+
+    h += flag[14] * 0x42240f
+    h -= 0x8732273d
+
+    h += flag[22] * -0x1c6098
+    h -= 0xd3d45c5a
+
+    h -= 0x0b3d7e5b
     h &= 0xffffffffffffffff
     return h
 
 
 def cond11(flag):
-    h = -1
+    h = flag[11] * 0x3768cc
+    h ^= 0x19f61419
+
+    h += flag[3] * -0x43be16
+    h += 0x566cc6a8
+
+    h ^= flag[15] * 0xb7cca5
+    h += 0x6db0599e
+
+    h += flag[27] * 0xf6419f
+    h ^= 0xbd613538
+
+    h ^= flag[19] * 0xae52fc
+    h += 0x717a44dd
+
+    h += flag[23] * -0x5eeb81
+    h += 0xdd02182d
+
+    h ^= flag[7] * 0xec1845
+    h ^= 0xef8e5416
+
+    h += flag[31] * 0x61a3be
+    h ^= 0x9288d4fa
+
+    h -= 0x0281bdbe05
     h &= 0xffffffffffffffff
     return h
 
@@ -391,9 +439,34 @@ def cond12(flag):
     h &= 0xffffffffffffffff
     return h
 
-
+"""NOT WORKING"""
 def cond13(flag):
-    h = -1
+    h = flag[29] * 0x725059
+    h ^= 0xa8b69f6b
+
+    #check again
+    h += flag[17] * 0x6dcfe7
+    h ^= 0x9a243c9a65
+
+    h += flag[1] * 0x8f4c44
+    h ^= 0x68e87685
+
+    h += flag[9] * -0xd2f4ce
+    h -= 0x87238dc5
+
+    h ^= flag[13] * 0xe99d3f
+    h += 0xed16797a
+
+    h += flag[5] * 0xada536
+    h -= 0x95a05aa9
+
+    h += flag[25] * -0xe0b352
+    h ^= 0x43c020
+
+    h += flag[21] * 0x8675b6
+    h += 0x34a29213
+
+    h -= 0x20196a7e
     h &= 0xffffffffffffffff
     return h
 
@@ -403,10 +476,34 @@ def cond14(flag):
     h &= 0xffffffffffffffff
     return h
 
-
+"""NOT WORKING"""
 def cond15(flag):
-    h = -1
-    h &= 0xffffffffffffffff
+    h = flag[11] * 0x251b86
+    h += 0xa751192c
+
+    h += flag[7] * -0x743927
+    h ^= 0xf851da43
+
+    h ^= flag[31] * 0x9a3479
+    h ^= 0x508733a5
+
+    h ^= flag[3] * 0x778a0d
+    h ^= 0x4bfd30d3
+
+    h += flag[27] * -0x7e04b5
+    h -= 0x5d540495
+
+    h ^= flag[19] * 0xf1c3ee
+    h += 0x460c48a6
+
+    h += flag[15] * 0x883b8a
+    h += 0x7b2ffbdc
+
+    h += flag[23] * 0x993db1
+    h += 0xa98b28fa
+
+    h -= 0x0222087cd4
+    h &= 0x00000000ffffff00
     return h
 
 
@@ -453,7 +550,31 @@ def cond18(flag):
 
 
 def cond19(flag):
-    h = -1
+    h = flag[27] * 0x65ac37
+    h += 0x15e586b0
+
+    h ^= flag[31] * 0xc6dde0
+    h ^= 0x2354cad4
+
+    h ^= flag[15] * 0x154abd
+    h ^= 0xfee57fd5
+
+    h ^= flag[19] * 0xa5e467
+    h += 0x315624ef
+
+    h ^= flag[23] * 0xb6bed6
+    h -= 0x5285b0a5
+
+    h += flag[7] * -0x832ae7
+    h += 0xe961bedd
+
+    h += flag[11] * 0xc46330
+    h -= 0x4a9e1d65
+
+    h ^= flag[3] * 0x3f8467
+    h ^= 0x95a6a1c4
+
+    h -= 0x01110e3519
     h &= 0xffffffffffffffff
     return h
 
@@ -497,7 +618,31 @@ def cond22(flag):
     return h
 
 def cond23(flag):
-    h = -1
+    h = flag[11] * 0xffd0ca
+    h -= 0x8f26cee8
+
+    h ^= flag[7] * 0xbf2b59
+    h += 0xc76bad6e
+
+    h += flag[23] * 0x29df01
+    h += 0xeef034a2
+
+    h ^= flag[27] * 0xbbda1d
+    h += 0x5923194e
+
+    h += flag[31] * -0x5d24a5
+    h -= 0x81100799
+
+    h += flag[15] * 0x3dc505
+    h -= 0x69baee91
+
+    h ^= flag[19] * 0x4e25a6
+    h += 0x2468b30a
+
+    h += flag[3] * -0xae1920
+    h ^= 0xd3db6142
+
+    h -= 0x01bb7af00f
     h &= 0xffffffffffffffff
     return h
 
@@ -536,12 +681,60 @@ def cond25(flag):
     return h
 
 def cond26(flag):
-    h = -1
+    h = flag[14] * 0xca894b
+    h += 0xa34fe406
+
+    h += flag[18] * 0x11552b
+    h += 0x3764ecd4
+
+    h ^= flag[22] * 0x7dc36b
+    h += 0xb45e777b
+
+    h ^= flag[26] * 0xcec5a6
+    h ^= 0x2d59bc15
+
+    h += flag[30] * 0xb6e30d
+    h ^= 0xfab9788c
+
+    h ^= flag[10] * 0x859c14
+    h += 0x41868e54
+
+    h += flag[6] * 0xd178d3
+    h += 0x958b0be3
+
+    h ^= flag[2] * 0x61645c
+    h += 0x9dc814cf
+
+    h -= 0x47b801542
     h &= 0xffffffffffffffff
     return h
 
 def cond27(flag):
-    h = -1
+    h = flag[27] * 0x7239e9
+    h -= 0x760e5ada
+
+    h += flag[3] * -0xf1c3d1
+    h -= 0xef28a068
+
+    h ^= flag[11] * 0x1b1367
+    h ^= 0x31e00d5a
+
+    h ^= flag[19] * 0x8038b3
+    h += 0xb5163447
+
+    h += flag[31] * 0x65fac9
+    h += 0xe04a889a
+
+    h += flag[23] * -0xd845ca
+    h -= 0xab7d1c58
+
+    h += flag[15] * 0xb2bbbc
+    h ^= 0x3a017b92
+
+    h ^= flag[7] * 0x33c8bd
+    h += 0x540376e3
+
+    h -= 0xffffffffb0e80c93
     h &= 0xffffffffffffffff
     return h
 
@@ -575,17 +768,90 @@ def cond28(flag):
     return h
 
 def cond29(flag):
-    h = -1
+    h = flag[17] * 0x87184c
+    h -= 0x72a15ad8
+
+    h ^= flag[25] * 0xf6372e
+    h += 0x16ad4f89
+
+    h += flag[21] * -0xd7355c
+    h -= 0xbb20fe35
+
+    h ^= flag[5] * 0x471dc1
+    h ^= 0x572c95f4
+
+    h += flag[1] * -0x8c4d98
+    h -= 0x94650c74
+
+    h += flag[13] * -0x5ceea1
+    h ^= 0xf703dcc1
+
+    h += flag[29] * -0xeb0863
+    h += 0xad3bc09d
+
+    h ^= flag[9] * 0xb6227f
+    h -= 0x46ae6a17
+
+    h -= 0xffffffff315e8118
     h &= 0xffffffffffffffff
     return h
 
+"""NOT WORKING"""
 def cond30(flag):
-    h = -1
+    h = flag[30] * 0x8c6412
+    h ^= 0xc08c361c
+
+    h ^= flag[14] * 0xb253c4
+    h += 0x21bb1147
+
+    h += flag[2] * 0x8f0579
+    h -= 0xfa691186
+
+    h += flag[22] * -0x7ac48a
+    h += 0xbb787dd5
+
+    h += flag[10] * 0x2737e6
+    h ^= 0xa2bb7683
+
+    h += flag[18] * -0x4363b9
+    h ^= 0x8878c453
+
+    h ^= flag[6] * 0xb38449
+    h -= 0x209dc078
+
+    h += flag[26] * 0x6e1316
+    h += 0x1343dee9
+
+    h -= 0xe3699527
     h &= 0xffffffffffffffff
     return h
 
 def cond31(flag):
-    h = -1
+    h = flag[19] * 0x390b78
+    h += 0x7d5deea4
+
+    h += flag[15] * -0x70e6c8
+    h -= 0x6ea339e2
+
+    h ^= flag[27] * 0xd8a292
+    h -= 0x288d6ec5
+
+    h += flag[23] * -0x978c71
+    h -= 0xe5d85ed8
+
+    h += flag[31] * 0x9a14d4
+    h -= 0xb69670cc
+
+    h ^= flag[7] * 0x995144
+    h -= 0xd2e77342
+
+    h ^= flag[11] * 0x811c39
+    h -= 0x2dd03565
+
+    h ^= flag[3] * 0x9953d7
+    h ^= 0x80877669
+
+    h -= 0xfFFffffdf9422478
     h &= 0xffffffffffffffff
     return h
 
