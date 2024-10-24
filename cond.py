@@ -892,7 +892,6 @@ def cond29(flag):
     h &= 0xffffffffffffffff
     return h
 
-"""NOT WORKING"""
 def cond30(flag):
     h = flag[30] * 0x8c6412
     h ^= 0xc08c361c
@@ -910,7 +909,7 @@ def cond30(flag):
     h ^= 0xa2bb7683
 
     h += flag[18] * -0x4363b9
-    h ^= 0x8878c453
+    h ^= 0x88c45378
 
     h ^= flag[6] * 0xb38449
     h -= 0x209dc078
