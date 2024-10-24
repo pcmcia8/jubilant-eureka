@@ -14,6 +14,11 @@ for c in cond[0::4]:
     s.add(c(flag) == 0)
     print('adding %s' % c.__name__)
 
+for c in cond[3::4]:
+    s.add(c(flag) == 0)
+    print('adding %s' % c.__name__)
+
+
 res = s.check()
 
 if res == sat:

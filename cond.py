@@ -476,7 +476,6 @@ def cond14(flag):
     h &= 0xffffffffffffffff
     return h
 
-"""NOT WORKING"""
 def cond15(flag):
     h = flag[11] * 0x251b86
     h += 0xa751192c
@@ -485,7 +484,7 @@ def cond15(flag):
     h ^= 0xf851da43
 
     h ^= flag[31] * 0x9a3479
-    h ^= 0x508733a5
+    h ^= 0x335087a5
 
     h ^= flag[3] * 0x778a0d
     h ^= 0x4bfd30d3
@@ -503,7 +502,7 @@ def cond15(flag):
     h += 0xa98b28fa
 
     h -= 0x0222087cd4
-    h &= 0x00000000ffffff00
+    h &= 0xffffffffffffffff
     return h
 
 
