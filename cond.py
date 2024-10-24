@@ -575,7 +575,31 @@ def cond28(flag):
     return h
 
 def cond29(flag):
-    h = -1
+    h = flag[17] * 0x87184c
+    h -= 0x72a15ad8
+
+    h ^= flag[25] * 0xf6372e
+    h += 0x16ad4f89
+
+    h += flag[21] * -0xd7355c
+    h -= 0xbb20fe35
+
+    h ^= flag[5] * 0x471dc1
+    h ^= 0x572c95f4
+
+    h += flag[1] * -0x8c4d98
+    h -= 0x94650c74
+
+    h += flag[13] * -0x5ceea1
+    h ^= 0xf703dcc1
+
+    h += flag[29] * -0xeb0863
+    h += 0xad3bc09d
+
+    h ^= flag[9] * 0xb6227f
+    h -= 0x46ae6a17
+
+    h -= 0xffffffff315e8118
     h &= 0xffffffffffffffff
     return h
 
