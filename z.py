@@ -9,18 +9,8 @@ flag = [ BitVec('V_%02d' % i, 64) for i in range(32) ]
 for i in range(32):
     s.add(flag[i] > 0x20)
     s.add(flag[i] < 0x80)
-
-for c in cond[0::4]:
-    s.add(c(flag) == 0)
-    print('adding %s' % c.__name__)
-
-for c in cond[2::4]:
-    s.add(c(flag) == 0)
-    print('adding %s' % c.__name__)
-
-for c in cond[3::4]:
-    s.add(c(flag) == 0)
-    print('adding %s' % c.__name__)
+    if i != 13:
+        s.add(cond[i](flag) == 0)
 
 
 res = s.check()

@@ -446,7 +446,7 @@ def cond13(flag):
 
     #check again
     h += flag[17] * 0x6dcfe7
-    h ^= 0x9a243c9a65
+    h ^= 0x653c249a
 
     h += flag[1] * 0x8f4c44
     h ^= 0x68e87685
@@ -470,7 +470,6 @@ def cond13(flag):
     h &= 0xffffffffffffffff
     return h
 
-"""NOT WORKING"""
 def cond14(flag):
     h = flag[2] * 0x4a5e95
     h += 0x5ed7a1f1
