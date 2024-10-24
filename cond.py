@@ -472,7 +472,31 @@ def cond13(flag):
 
 
 def cond14(flag):
-    h = -1
+    h = flag[2] * 0x4a5e95
+    h += 0x5ed7a1f1
+
+    h += flag[22] * 0x3a7b49
+    h ^= 0x87a91310
+
+    h += flag[6] * -0xf27038
+    h ^= 0xf64a0f19
+
+    h += flag[30] * 0xa187d0
+    h -= 0xbbcc735d
+
+    h += flag[18] * -0xfc991a
+    h ^= 0xf9ddd08f
+
+    h += flag[26] * -0x4e947a
+    h -= 0x59a9172e
+
+    h ^= flag[14] * 0x324ead
+    h -= 0x969a7a64
+
+    h += flag[10] * -0x656b1b
+    h += 0x8c112543
+
+    h -= 0xfffffffdc1db45c7
     h &= 0xffffffffffffffff
     return h
 
@@ -543,7 +567,31 @@ def cond17(flag):
 
 
 def cond18(flag):
-    h = -1
+    h = flag[10] * 0x52f44d
+    h ^= 0x33b3d0e4
+
+    h ^= flag[30] * 0xe6e66e
+    h -= 0x275d79b0
+
+    h += flag[6] * -0xf98017
+    h ^= 0x456e6c1d
+
+    h += flag[14] * -0x34fcb0
+    h ^= 0x28709cd8
+
+    h ^= flag[2] * 0x4d8ba9
+    h += 0xb5482f53
+
+    h ^= flag[18] * 0x6c7e92
+    h += 0x2af1d741
+
+    h += flag[22] * 0xa4711e
+    h ^= 0x22e79af6
+
+    h += flag[26] * 0x33d374
+    h -= 0x117efc0e
+
+    h -= 0x9379438e
     h &= 0xffffffffffffffff
     return h
 
@@ -612,7 +660,31 @@ def cond21(flag):
     return h
 
 def cond22(flag):
-    h = -1
+    h = flag[6] * 0x608d19
+    h -= 0x2eee62ec
+
+    h += flag[14] * -0xbe18f4
+    h ^= 0xb86f9b72
+
+    h ^= flag[30] * 0x88dec9
+    h += 0xaf5cd797
+
+    h ^= flag[18] * 0xb68150
+    h -= 0x3d073ba5
+
+    h += flag[22] * 0x4d166c
+    h += 0xbb1e1039
+
+    h += flag[2] * -0x495e3f
+    h += 0xe727b98e
+
+    h += flag[10] * -0x5caba1
+    h -= 0x1a3cf6c1
+
+    h += flag[26] * 0x183a4d
+    h -= 0xca0397e1
+
+    h -= 0x6684a31d
     h &= 0xffffffffffffffff
     return h
 
