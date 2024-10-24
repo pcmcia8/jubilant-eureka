@@ -149,9 +149,13 @@ def get_python_hashes(flag):
     return python_hashes
 
 def main():
-    flag = '0'*32
+    flag = '12345678901234567890123456789012'
     if len(sys.argv) >= 2:
         flag = sys.argv[1]
+
+    if len(flag) != 32:
+        print("flag must be 32 chars long")
+        exit()
 
     debugger_hashes = get_debugger_hashes(flag)
     python_hashes = get_python_hashes(flag)
