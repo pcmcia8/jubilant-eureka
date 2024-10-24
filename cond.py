@@ -201,28 +201,154 @@ def cond5(flag):
     return h
 
 def cond6(flag):
-    h = -1
+    k = flag[22]
+    h = k * 0xa6edf9
+    h ^= 0x77c58017
+
+    k = flag[18]
+    h += k * -0xe87bf4
+    h -= 0x999bd740
+
+    k = flag[2]
+    h += k * -0x19864d
+    h -= 0x41884bed
+
+    k = flag[6]
+    h += k * 0x901524
+    h ^= 0x247bf095
+
+    k = flag[10]
+    h ^= k * 0xc897cc
+    h ^= 0xeff7eea8
+
+    k = flag[14]
+    h ^= k * 0x731197
+    h += 0x67a0d262
+
+    k = flag[30]
+    h += k * 0x5f591c
+    h += 0x316661f9
+
+    k = flag[26]
+    h += k * 0x579d0e
+    h -= 0x3427fa1c
+
+    h -= 0x900d744b
     h &= 0xffffffffffffffff
     return h
 
-
 def cond7(flag):
-    h = -1
+    k = flag[23]
+    h = k * 0x9afaf6
+    h ^= 0xdb895413
+
+    k = flag[19]
+    h += k * 0x7d1a12
+    h -= 0xc679fc44
+
+    k = flag[11]
+    h += k * 0x4d84b1
+    h += 0xa30387dc
+
+    k = flag[15]
+    h += k * -0x552b78
+    h ^= 0xf54a725e
+
+    k = flag[7]
+    h ^= k * 0xf372a1
+    h -= 0x4c5103ad
+
+    k = flag[31]
+    h += k * 0xb40eb5
+    h ^= 0x16fa70d2
+
+    k = flag[3]
+    h ^= k * 0x9e5c18
+    h += 0x38784353
+
+    k = flag[27]
+    h ^= k * 0xf2513b
+    h += 0xa1fc09f0
+
+    h -= 0x0101d6e408
     h &= 0xffffffffffffffff
     return h
 
 
 def cond8(flag):
-    h = -1
+    k = flag[28]
+    h = k * 0xac70b9
+    h += 0xdae0a932
+
+    k = flag[4]
+    h ^= k * 0xc42b6f
+    h ^= 0xbc03104c
+
+    k = flag[0]
+    h += k * -0x867193
+    h += 0xdc48c63a
+
+    k = flag[12]
+    h += k * -0x6d31fe
+    h ^= 0x4baeb6d0
+
+    k = flag[16]
+    h += k * -0xaaae58
+    h -= 0xcd7121f8
+
+    k = flag[20]
+    h += k * 0x9faa7a
+    h += 0xbe0a2c9c
+
+    k = flag[24]
+    h += k * 0x354ac6
+    h ^= 0xd8ad17f1
+
+    k = flag[8]
+    h += k * -0x3f2acb
+    h -= 0x8b6b7d89
+
+    h -= 0x263c13793
     h &= 0xffffffffffffffff
     return h
 
 
 def cond9(flag):
-    h = -1
+    k = flag[29]
+    h = k * 0xe9d18a
+    h ^= 0xcb5557ea
+
+    k = flag[25]
+    h ^= k * 0x8aa5b9
+    h ^= 0x9125a906
+
+    k = flag[17]
+    h += k * -0x241997
+    h += 0x6e46fcb8
+
+    k = flag[5]
+    h += k * 0xe3da0f
+    h += 0x442800ec
+
+    k = flag[13]
+    h += k * 0xa5f9eb
+    h += 0xbde8f9af
+
+    k = flag[21]
+    h += k * 0xd6e0fb
+    h -= 0xc9d97243
+
+    k = flag[1]
+    h += k * 0x8dc36e
+    h += 0xc54b7d21
+
+    k = flag[9]
+    h ^= k * 0xb072ee
+    h -= 0x2a1ab0c1
+    
+    h -= 0x02bf2044db
     h &= 0xffffffffffffffff
     return h
-
 
 def cond10(flag):
     h = -1
